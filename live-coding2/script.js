@@ -44,18 +44,18 @@ function Operation(operationparam) {
 function Equale() {
     a = parseFloat(aString)
     b = parseFloat(bString)
-    solution = Calculer(a,b,operation)
-    display(solution)
+    solution = Calculate(a,b,operation)
+    display(solution);
 }
 
-function Calculer(a,b,operation) {
+function Calculate(a,b,operation) {
     let solution = undefined
     switch (operation) {
         case '+':
             solution = a + b
             break;
             case '-':
-            solution = a - b
+            solution = a + b
         default:
             break;
     }
